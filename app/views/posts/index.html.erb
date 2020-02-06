@@ -1,0 +1,10 @@
+<h2>feed</h2>
+
+<% @posts.each do |post| %>
+    <a href="/posts"></a>
+    <%= image_tag post.pic, class: "my-pic" %>
+    <p><%= post.caption %></p>
+    
+<% end %>  
+<%= link_to "New post", "posts/new" %>
+<%= link_to "Edit", "posts/new" %>
